@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    color: #fff;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 82px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+    z-index: 1000;
+
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #e7a84b;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #e7a84b;
+}
+
+.nav-btn {
+    color: #111;
+    background: #fff;
+    text-decoration: none;
+
+    padding: 12px 20px;
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background: #e7a84b;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MOBILE MENU BUTTON
+========================= */
+
+.menu-toggle {
+    display: none;
+
+    border: none;
+    background: transparent;
+    color: #fff;
+
+    font-size: 27px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    padding: 120px 8% 80px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.82) 0%,
+            rgba(0, 0, 0, 0.45) 45%,
+            rgba(0, 0, 0, 0.12) 100%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.15),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("../images/hero.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat:no-repeat ;
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 760px;
+}
+
+.hero-eyebrow {
+    margin-bottom: 22px;
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 4px;
+
+    color: #e7a84b;
+}
+
+.hero h1 {
+    font-size: clamp(50px, 7vw, 92px);
+    line-height: 0.98;
+    letter-spacing: -4px;
+
+    margin-bottom: 28px;
+}
+
+.hero h1 em {
+    color: #e7a84b;
+    font-family: Georgia, serif;
+    font-weight: 400;
+}
+
+.hero-text {
+    max-width: 600px;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.primary-btn,
+.secondary-btn {
+    text-decoration: none;
+    padding: 15px 24px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #e7a84b;
+    color: #111;
+}
+
+.primary-btn span {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+    background: #fff;
+}
+
+.secondary-btn {
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.secondary-btn:hover {
+    background: #fff;
+    color: #111;
+}
+
+
+/* =========================
+   SCROLL INDICATOR
+========================= */
+
+.hero-scroll {
+    position: absolute;
+    bottom: 35px;
+    right: 7%;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    transform: rotate(90deg);
+    transform-origin: right center;
+}
+
+.hero-scroll span {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.scroll-line {
+    width: 55px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+
+/* =========================
+   INTRO SECTION
+========================= */
+
+.intro {
+    min-height: 60vh;
+
+    padding: 120px 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: #f4f0e8;
+    color: #151515;
+}
+
+.intro p {
+    color: #b47a2d;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+.intro h2 {
+    max-width: 850px;
+
+    font-family: Georgia, serif;
+    font-size: clamp(35px, 5vw, 65px);
+    line-height: 1.08;
+    font-weight: 400;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .nav-menu,
+    .nav-btn {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        height: 70px;
+        padding: 0 6%;
+    }
+
+    .hero {
+        padding: 120px 7% 80px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .hero-actions {
+        flex-wrap: wrap;
+    }
+
+    .hero-scroll {
+        display: none;
+    }
+}
+
+/* =========================
+   DESTINATIONS
+========================= */
+
+.destinations {
+    background: #f4f0e8;
+    color: #151515;
+    padding: 120px 8%;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin-bottom: 60px;
+}
+
+.section-heading > span {
+    display: block;
+    color: #b47a2d;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+.section-heading h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -2px;
+    margin-bottom: 24px;
+}
+
+.section-heading h2 em {
+    color: #b47a2d;
+    font-weight: 400;
+}
+
+.section-heading p {
+    max-width: 560px;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   DESTINATION GRID
+========================= */
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.destination-card {
+    background: #fff;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   DESTINATION IMAGE
+========================= */
+
+.destination-image {
+    height: 330px;
+    overflow: hidden;
+}
+
+.destination-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.destination-card:hover .destination-image img {
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   DESTINATION INFO
+========================= */
+
+.destination-info {
+    padding: 28px;
+}
+
+.destination-info > span {
+    color: #b47a2d;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.destination-info h3 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: 400;
+    margin: 10px 0 12px;
+}
+
+.destination-info p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+.destination-info a {
+    color: #151515;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.destination-info a:hover {
+    color: #b47a2d;
+}
+
+
+/* =========================
+   DESTINATION RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .destinations {
+        padding: 90px 7%;
+    }
+
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-image {
+        height: 300px;
+    }
+
+}
+
+/* =========================
+   DESTINATION FILTERS
+========================= */
+
+.destination-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 45px;
+}
+
+.filter-btn {
+    border: 1px solid rgba(21, 21, 21, 0.2);
+    background: transparent;
+    color: #555;
+
+    padding: 11px 20px;
+    border-radius: 30px;
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    border-color: #b47a2d;
+    color: #b47a2d;
+}
+
+.filter-btn.active {
+    background: #151515;
+    color: #fff;
+    border-color: #151515;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .destination-filters {
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 9px 15px;
+        font-size: 11px;
+    }
+
+}

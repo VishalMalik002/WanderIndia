@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderIndia | Explore the Soul of India</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <!-- =========================
+     NAVBAR
+========================= -->
+<header class="navbar">
+    <a href="#" class="logo">Wander<span>India</span></a>
+
+    <nav class="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#destinations" class="nav-btn">Explore India</a>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+        ☰
+    </button>
+</header>
+
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+<main>
+
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="hero-eyebrow">DISCOVER • EXPERIENCE • WANDER</p>
+
+            <h1>
+                Explore places<br>
+                that tell a <em>story.</em>
+            </h1>
+
+            <p class="hero-text">
+                From timeless temples and royal palaces to majestic
+                mountains and peaceful coastlines — discover the soul of India.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#destinations" class="primary-btn">
+                    Explore Destinations
+                    <span>→</span>
+                </a>
+
+                <a href="#experiences" class="secondary-btn">
+                    Discover Experiences
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-scroll">
+            <span>SCROLL TO EXPLORE</span>
+            <div class="scroll-line"></div>
+        </div>
+
+    </section>
+
+    <!-- =========================
+     DESTINATIONS
+========================= -->
+
+<section class="destinations" id="destinations">
+
+    <div class="section-heading">
+        <span>EXPLORE INDIA</span>
+        <h2>Places worth<br><em>remembering.</em></h2>
+        <p>
+            Discover India's most beautiful destinations,
+            from royal cities to peaceful mountains and beaches.
+        </p>
+    </div>
+
+    <div class="destination-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="heritage">Heritage</button>
+    <button class="filter-btn" data-filter="temples">Temples</button>
+    <button class="filter-btn" data-filter="mountains">Mountains</button>
+    <button class="filter-btn" data-filter="beaches">Beaches</button>
+    <button class="filter-btn" data-filter="nature">Nature</button>
+    <button class="filter-btn" data-filter="adventure">Adventure</button>
+</div>
+
+    <div class="destination-grid">
+
+        <article class="destination-card" data-category="heritage">
+            <div class="destination-image">
+                <img src="images/Taj-Mahal.jpg" alt="Agra">
+            </div>
+            <div class="destination-info">
+                <span>UTTAR PRADESH</span>
+                <h3>Agra</h3>
+                <p>Experience the timeless beauty of the Taj Mahal.</p>
+                <a href="#">Explore →</a>
+            </div>
+        </article>
+
+        <article class="destination-card" data-category="heritage">
+            <div class="destination-image">
+                <img src="images/Hawa-Mahal.jpg" alt="Jaipur">
+            </div>
+            <div class="destination-info">
+                <span>RAJASTHAN</span>
+                <h3>Jaipur</h3>
+                <p>Discover royal palaces, forts and vibrant culture.</p>
+                <a href="#">Explore →</a>
+            </div>
+        </article>
+
+        <article class="destination-card" data-category="nature">
+            <div class="destination-image">
+                <img src="images/Kerala.jpg" alt="Kerala">
+            </div>
+            <div class="destination-info">
+                <span>KERALA</span>
+                <h3>Kerala</h3>
+                <p>Relax among peaceful backwaters and lush landscapes.</p>
+                <a href="#">Explore →</a>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
+
+    <!-- Temporary section so navigation has a destination -->
+    <section class="intro" id="destinations">
+        <p>WANDERINDIA</p>
+        <h2>India is not just a destination.<br>It's a story waiting to be lived.</h2>
+    </section>
+
+</main>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
