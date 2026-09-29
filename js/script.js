@@ -9,13 +9,14 @@ filterButtons.forEach(button => {
 
     button.addEventListener("click", () => {
 
-        // Remove active state
+        // Keep the filter state accessible to assistive technology.
         filterButtons.forEach(btn => {
             btn.classList.remove("active");
+            btn.setAttribute("aria-selected", "false");
         });
 
-        // Add active state
         button.classList.add("active");
+        button.setAttribute("aria-selected", "true");
 
         const selectedFilter = button.dataset.filter;
 
@@ -602,9 +603,12 @@ if (placeKey && vrindavanPlaces[placeKey]) {
 
             card.className = "highlight-card";
 
+            const heading = item.length === 3 ? `${item[0]} ${item[1]}` : item[0];
+            const description = item.length === 3 ? item[2] : item[1];
+
             card.innerHTML = `
-                <h3>${item[0]}</h3>
-                <p>${item[1]}</p>
+                <h3>${heading}</h3>
+                <p>${description}</p>
             `;
 
             highlightGrid.appendChild(card);
