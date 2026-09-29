@@ -5,10 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="WanderIndia — discover India's most beautiful destinations, sacred places, heritage, mountains and unforgettable experiences.">
   <meta name="theme-color" content="#121212">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="WanderIndia | Explore the Soul of India">
+  <meta property="og:description" content="Discover India's heritage, spirituality, mountains, nature and unforgettable destinations with WanderIndia.">
+  <meta property="og:image" content="images/hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WanderIndia | Explore the Soul of India">
+  <meta name="twitter:description" content="Discover India's heritage, spirituality, mountains, nature and unforgettable destinations with WanderIndia.">
+  <meta name="twitter:image" content="images/hero.png">
   <title>WanderIndia | Explore the Soul of India</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/hero.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -61,22 +70,22 @@
     <p>Start with India's iconic landmarks, peaceful escapes and sacred destinations.</p>
   </div>
   <div class="destination-filters" role="tablist" aria-label="Destination categories">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="heritage">Heritage</button>
-    <button class="filter-btn" data-filter="temples">Temples</button>
-    <button class="filter-btn" data-filter="mountains">Mountains</button>
-    <button class="filter-btn" data-filter="nature">Nature</button>
+    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+    <button class="filter-btn" data-filter="heritage" role="tab" aria-selected="false">Heritage</button>
+    <button class="filter-btn" data-filter="temples" role="tab" aria-selected="false">Temples</button>
+    <button class="filter-btn" data-filter="mountains" role="tab" aria-selected="false">Mountains</button>
+    <button class="filter-btn" data-filter="nature" role="tab" aria-selected="false">Nature</button>
   </div>
   <div class="destination-grid">
-    <article class="destination-card" data-category="heritage"><div class="destination-image"><img src="images/Taj-Mahal.jpg" alt="Taj Mahal in Agra" loading="lazy"></div><div class="destination-info"><span>UTTAR PRADESH</span><h3>Agra</h3><p>Timeless Mughal architecture and the world-famous Taj Mahal.</p><a href="place.html?place=agra">Explore <span>→</span></a></div></article>
-    <article class="destination-card" data-category="heritage"><div class="destination-image"><img src="images/Hawa-Mahal.jpg" alt="Hawa Mahal in Jaipur" loading="lazy"></div><div class="destination-info"><span>RAJASTHAN</span><h3>Jaipur</h3><p>Royal palaces, colourful markets and the unmistakable Pink City.</p><a href="jaipur.html">Explore <span>→</span></a></div></article>
-    <article class="destination-card" data-category="nature"><div class="destination-image"><img src="images/Kerala.jpg" alt="Kerala backwaters" loading="lazy"></div><div class="destination-info"><span>KERALA</span><h3>Kerala</h3><p>Peaceful backwaters, lush landscapes and a slower way to travel.</p><a href="place.html?place=kerala">Explore <span>→</span></a></div></article>
-    <article class="destination-card" data-category="mountains"><div class="destination-image"><img src="images/Manali.jpg" alt="Manali mountains" loading="lazy"></div><div class="destination-info"><span>HIMACHAL PRADESH</span><h3>Manali</h3><p>Mountain valleys, fresh air and unforgettable Himalayan adventures.</p><a href="place.html?place=manali">Explore <span>→</span></a></div></article>
-    <article class="destination-card" data-category="mountains"><div class="destination-image"><img src="images/Shimla.jpg" alt="Shimla hills" loading="lazy"></div><div class="destination-info"><span>HIMACHAL PRADESH</span><h3>Shimla</h3><p>Colonial charm, pine forests and beautiful Himalayan views.</p><a href="place.html?place=shimla">Explore <span>→</span></a></div></article>
-    <article class="destination-card" data-category="mountains"><div class="destination-image"><img src="images/Mussoorie.jpg" alt="Mussoorie mountains" loading="lazy"></div><div class="destination-info"><span>UTTARAKHAND</span><h3>Mussoorie</h3><p>A misty hill escape with scenic viewpoints and quiet forest trails.</p><a href="place.html?place=mussoorie">Explore <span>→</span></a></div></article>
-    <article class="destination-card" data-category="temples"><div class="destination-image"><img src="images/Mathura.jpg" alt="Mathura temple area" loading="lazy"></div><div class="destination-info"><span>UTTAR PRADESH</span><h3>Mathura</h3><p>Walk through the sacred land of Krishna and its timeless heritage.</p><a href="mathura.html">Explore <span>→</span></a></div></article>
-    <article class="destination-card" data-category="temples"><div class="destination-image"><img src="images/premanand-ji-maharaj.jpg" alt="Vrindavan spiritual destination" loading="lazy"></div><div class="destination-info"><span>UTTAR PRADESH</span><h3>Vrindavan</h3><p>Temple trails, sacred streets and a deeply devotional atmosphere.</p><a href="vrindavan.html">Explore <span>→</span></a></div></article>
-    <article class="destination-card" data-category="temples"><div class="destination-image"><img src="images/Varanasi.jpg" alt="Varanasi ghats" loading="lazy"></div><div class="destination-info"><span>UTTAR PRADESH</span><h3>Varanasi</h3><p>Ancient ghats, river rituals and one of India's oldest living cities.</p><a href="place.html?place=varanasi">Explore <span>→</span></a></div></article>
+    <article class="destination-card" data-category="heritage"><div class="destination-image"><img decoding="async" src="images/Taj-Mahal.jpg" alt="Taj Mahal in Agra" loading="lazy"></div><div class="destination-info"><span>UTTAR PRADESH</span><h3>Agra</h3><p>Timeless Mughal architecture and the world-famous Taj Mahal.</p><a href="place.html?place=agra">Explore <span>→</span></a></div></article>
+    <article class="destination-card" data-category="heritage"><div class="destination-image"><img decoding="async" src="images/Hawa-Mahal.jpg" alt="Hawa Mahal in Jaipur" loading="lazy"></div><div class="destination-info"><span>RAJASTHAN</span><h3>Jaipur</h3><p>Royal palaces, colourful markets and the unmistakable Pink City.</p><a href="jaipur.html">Explore <span>→</span></a></div></article>
+    <article class="destination-card" data-category="nature"><div class="destination-image"><img decoding="async" src="images/Kerala.jpg" alt="Kerala backwaters" loading="lazy"></div><div class="destination-info"><span>KERALA</span><h3>Kerala</h3><p>Peaceful backwaters, lush landscapes and a slower way to travel.</p><a href="place.html?place=kerala">Explore <span>→</span></a></div></article>
+    <article class="destination-card" data-category="mountains"><div class="destination-image"><img decoding="async" src="images/Manali.jpg" alt="Manali mountains" loading="lazy"></div><div class="destination-info"><span>HIMACHAL PRADESH</span><h3>Manali</h3><p>Mountain valleys, fresh air and unforgettable Himalayan adventures.</p><a href="place.html?place=manali">Explore <span>→</span></a></div></article>
+    <article class="destination-card" data-category="mountains"><div class="destination-image"><img decoding="async" src="images/Shimla.jpg" alt="Shimla hills" loading="lazy"></div><div class="destination-info"><span>HIMACHAL PRADESH</span><h3>Shimla</h3><p>Colonial charm, pine forests and beautiful Himalayan views.</p><a href="place.html?place=shimla">Explore <span>→</span></a></div></article>
+    <article class="destination-card" data-category="mountains"><div class="destination-image"><img decoding="async" src="images/Mussoorie.jpg" alt="Mussoorie mountains" loading="lazy"></div><div class="destination-info"><span>UTTARAKHAND</span><h3>Mussoorie</h3><p>A misty hill escape with scenic viewpoints and quiet forest trails.</p><a href="place.html?place=mussoorie">Explore <span>→</span></a></div></article>
+    <article class="destination-card" data-category="temples"><div class="destination-image"><img decoding="async" src="images/Mathura.jpg" alt="Mathura temple area" loading="lazy"></div><div class="destination-info"><span>UTTAR PRADESH</span><h3>Mathura</h3><p>Walk through the sacred land of Krishna and its timeless heritage.</p><a href="mathura.html">Explore <span>→</span></a></div></article>
+    <article class="destination-card" data-category="temples"><div class="destination-image"><img decoding="async" src="images/premanand-ji-maharaj.jpg" alt="Vrindavan spiritual destination" loading="lazy"></div><div class="destination-info"><span>UTTAR PRADESH</span><h3>Vrindavan</h3><p>Temple trails, sacred streets and a deeply devotional atmosphere.</p><a href="vrindavan.html">Explore <span>→</span></a></div></article>
+    <article class="destination-card" data-category="temples"><div class="destination-image"><img decoding="async" src="images/Varanasi.jpg" alt="Varanasi ghats" loading="lazy"></div><div class="destination-info"><span>UTTAR PRADESH</span><h3>Varanasi</h3><p>Ancient ghats, river rituals and one of India's oldest living cities.</p><a href="place.html?place=varanasi">Explore <span>→</span></a></div></article>
   </div>
 </section>
 
@@ -90,7 +99,7 @@
 </section>
 
 <section class="featured">
-  <div class="featured-image"><img src="images/Ayodhya.jpg" alt="Ayodhya" loading="lazy"></div>
+  <div class="featured-image"><img decoding="async" src="images/Ayodhya.jpg" alt="Ayodhya" loading="lazy"></div>
   <div class="featured-copy"><span>FEATURED STORY</span><h2>Some places are<br><em>felt, not visited.</em></h2><p>Take the slower route through India's sacred heartland. Discover the places, people and traditions that give a journey its meaning.</p><a href="temples.html" class="text-link">Explore spiritual India <span>↗</span></a></div>
 </section>
 
