@@ -3,255 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WanderIndia — discover India's most beautiful destinations, sacred places, heritage, mountains and unforgettable experiences.">
+  <meta name="theme-color" content="#121212">
   <title>WanderIndia | Explore the Soul of India</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
-  <!-- =========================
-     NAVBAR
-========================= -->
 <header class="navbar">
-    <a href="#" class="logo">Wander<span>India</span></a>
-
-    <nav class="nav-menu">
-        <a href="#home">Home</a>
-        <a href="#destinations">Destinations</a>
-        <a href="#experiences">Experiences</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <a href="#destinations" class="nav-btn">Explore India</a>
-
-    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
-        ☰
-    </button>
+  <a href="index.html" class="logo" aria-label="WanderIndia home">Wander<span>India</span></a>
+  <nav class="nav-menu" id="site-nav" aria-label="Primary navigation">
+    <a href="#home">Home</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#experiences">Experiences</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#destinations" class="nav-btn">Explore India <span>↗</span></a>
+  <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
 </header>
 
-
-<!-- =========================
-     HERO SECTION
-========================= -->
 <main>
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">DISCOVER • EXPERIENCE • WANDER</p>
+    <h1>India, <em>one story</em><br>at a time.</h1>
+    <p class="hero-text">From sacred cities and royal palaces to misty mountains and peaceful backwaters — discover places that stay with you long after the journey ends.</p>
+    <div class="hero-actions">
+      <a href="#destinations" class="primary-btn">Explore destinations <span>→</span></a>
+      <a href="#experiences" class="secondary-btn">Find your experience</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>SCROLL TO EXPLORE</span><div class="scroll-line"></div></div>
+  <div class="hero-stat"><strong>28+</strong><span>places to discover</span></div>
+</section>
 
-    <section class="hero" id="home">
-
-        <div class="hero-overlay"></div>
-
-        <div class="hero-content">
-
-            <p class="hero-eyebrow">DISCOVER • EXPERIENCE • WANDER</p>
-
-            <h1>
-                Explore places<br>
-                that tell a <em>story.</em>
-            </h1>
-
-            <p class="hero-text">
-                From timeless temples and royal palaces to majestic
-                mountains and peaceful coastlines — discover the soul of India.
-            </p>
-
-            <div class="hero-actions">
-                <a href="#destinations" class="primary-btn">
-                    Explore Destinations
-                    <span>→</span>
-                </a>
-
-                <a href="#experiences" class="secondary-btn">
-                    Discover Experiences
-                </a>
-            </div>
-
-        </div>
-
-        <div class="hero-scroll">
-            <span>SCROLL TO EXPLORE</span>
-            <div class="scroll-line"></div>
-        </div>
-
-    </section>
-
-    <!-- =========================
-     DESTINATIONS
-========================= -->
+<section class="intro" id="about">
+  <div class="intro-copy">
+    <p>THE WANDERINDIA JOURNEY</p>
+    <h2>India is not just a destination.<br><em>It's a story waiting to be lived.</em></h2>
+    <p class="intro-text">WanderIndia brings together heritage, spirituality, nature and adventure in one thoughtful travel experience — helping curious travellers find their next unforgettable place.</p>
+  </div>
+  <div class="intro-points">
+    <div><span>01</span><strong>Curated places</strong><p>Handpicked destinations worth slowing down for.</p></div>
+    <div><span>02</span><strong>Local stories</strong><p>Go beyond photographs and discover the meaning behind each place.</p></div>
+    <div><span>03</span><strong>Simple planning</strong><p>Useful travel context without overwhelming you.</p></div>
+  </div>
+</section>
 
 <section class="destinations" id="destinations">
-
-    <div class="section-heading">
-        <span>EXPLORE INDIA</span>
-        <h2>Places worth<br><em>remembering.</em></h2>
-        <p>
-            Discover India's most beautiful destinations,
-            from royal cities to peaceful mountains and beaches.
-        </p>
-    </div>
-
-    <div class="destination-filters">
+  <div class="section-heading">
+    <span>EXPLORE INDIA</span>
+    <h2>Places worth<br><em>remembering.</em></h2>
+    <p>Start with India's iconic landmarks, peaceful escapes and sacred destinations.</p>
+  </div>
+  <div class="destination-filters" role="tablist" aria-label="Destination categories">
     <button class="filter-btn active" data-filter="all">All</button>
     <button class="filter-btn" data-filter="heritage">Heritage</button>
     <button class="filter-btn" data-filter="temples">Temples</button>
     <button class="filter-btn" data-filter="mountains">Mountains</button>
-    <button class="filter-btn" data-filter="beaches">Beaches</button>
     <button class="filter-btn" data-filter="nature">Nature</button>
-    <button class="filter-btn" data-filter="adventure">Adventure</button>
-</div>
-
-    <div class="destination-grid">
-
-        <article class="destination-card" data-category="heritage">
-            <div class="destination-image">
-                <img src="images/Taj-Mahal.jpg" alt="Agra">
-            </div>
-            <div class="destination-info">
-                <span>UTTAR PRADESH</span>
-                <h3>Agra</h3>
-                <p>Experience the timeless beauty of the Taj Mahal.</p>
-                <a href="place.html?place=agra">Explore →</a>
-            </div>
-        </article>
-
-        <article class="destination-card" data-category="heritage">
-            <div class="destination-image">
-                <img src="images/Hawa-Mahal.jpg" alt="Jaipur">
-            </div>
-            <div class="destination-info">
-                <span>RAJASTHAN</span>
-                <h3>Jaipur</h3>
-                <p>Discover royal palaces, forts and vibrant culture.</p>
-                <a href="place.html?place=jaipur">Explore →</a>
-            </div>
-        </article>
-
-        <article class="destination-card" data-category="nature">
-            <div class="destination-image">
-                <img src="images/Kerala.jpg" alt="Kerala">
-            </div>
-
-            
-            <div class="destination-info">
-                <span>KERALA</span>
-                <h3>Kerala</h3>
-                <p>Relax among peaceful backwaters and lush landscapes.</p>
-                <a href="place.html?place=kerala">Explore →</a>
-            </div>
-        </article>
-
-        <article class="destination-card" data-category="mountains">
-    <div class="destination-image">
-        <img src="images/Manali.jpg" alt="Manali, Himachal Pradesh">
-    </div>
-
-    <div class="destination-info">
-        <span>HIMACHAL PRADESH</span>
-        <h3>Manali</h3>
-        <p>Snow-covered mountains, beautiful valleys and unforgettable adventures.</p>
-        <a href="#">Explore →</a>
-    </div>
-</article>
-
-
-<article class="destination-card" data-category="mountains">
-    <div class="destination-image">
-        <img src="images/Shimla.jpg" alt="Shimla, Himachal Pradesh">
-    </div>
-
-    <div class="destination-info">
-        <span>HIMACHAL PRADESH</span>
-        <h3>Shimla</h3>
-        <p>Charming hills, peaceful forests and beautiful colonial-era streets.</p>
-        <a href="#">Explore →</a>
-    </div>
-</article>
-
-
-<article class="destination-card" data-category="mountains">
-    <div class="destination-image">
-        <img src="images/Mussoorie.jpg" alt="Mussoorie, Uttarakhand">
-    </div>
-
-    <div class="destination-info">
-        <span>UTTARAKHAND</span>
-        <h3>Mussoorie</h3>
-        <p>A peaceful Himalayan escape surrounded by misty mountain landscapes.</p>
-        <a href="#">Explore →</a>
-    </div>
-</article>
-
-<!-- =========================
-     TEMPLES & SPIRITUAL
-========================= -->
-
-<article class="destination-card" data-category="temples">
-    <div class="destination-image">
-        <img src="images/Mathura.jpg" alt="Shri Krishna Janmabhoomi, Mathura">
-    </div>
-
-    <div class="destination-info">
-        <span>UTTAR PRADESH</span>
-        <h3>Mathura</h3>
-        <p>Walk through the sacred land of Krishna and discover its timeless spiritual heritage.</p>
-        <a href="temples.html">Explore →</a>
-    </div>
-</article>
-
-
-<article class="destination-card" data-category="temples">
-    <div class="destination-image">
-        <img src="images/premanand-ji-maharaj.jpg" alt="Vrindavan, Uttar Pradesh">
-    </div>
-
-    <div class="destination-info">
-        <span>UTTAR PRADESH</span>
-        <h3>Vrindavan</h3>
-        <p>Experience sacred temples, peaceful ghats and the timeless atmosphere of Krishna's city.</p>
-        <a href="temples.html">Explore →</a>
-    </div>
-</article>
-
-
-<article class="destination-card" data-category="temples">
-    <div class="destination-image">
-        <img src="images/Varanasi.jpg" alt="Varanasi Ghats">
-    </div>
-
-    <div class="destination-info">
-        <span>UTTAR PRADESH</span>
-        <h3>Varanasi</h3>
-        <p>Discover ancient ghats, spiritual rituals and one of India's oldest living cities.</p>
-        <a href="temples.html">Explore →</a>
-    </div>
-</article>
-
-
-<article class="destination-card" data-category="temples">
-    <div class="destination-image">
-        <img src="images/Ayodhya.jpg" alt="Ram Mandir, Ayodhya">
-    </div>
-
-    <div class="destination-info">
-        <span>UTTAR PRADESH</span>
-        <h3>Ayodhya</h3>
-        <p>Explore the sacred city of Ram and its rich cultural and spiritual heritage.</p>
-        <a href="temples.html">Explore →</a>
-    </div>
-</article>
-
-    </div>
-
+  </div>
+  <div class="destination-grid">
+    <article class="destination-card" data-category="heritage"><div class="destination-image"><img src="images/Taj-Mahal.jpg" alt="Taj Mahal in Agra" loading="lazy"></div><div class="destination-info"><span>UTTAR PRADESH</span><h3>Agra</h3><p>Timeless Mughal architecture and the world-famous Taj Mahal.</p><a href="place.html?place=agra">Explore <span>→</span></a></div></article>
+    <article class="destination-card" data-category="heritage"><div class="destination-image"><img src="images/Hawa-Mahal.jpg" alt="Hawa Mahal in Jaipur" loading="lazy"></div><div class="destination-info"><span>RAJASTHAN</span><h3>Jaipur</h3><p>Royal palaces, colourful markets and the unmistakable Pink City.</p><a href="jaipur.html">Explore <span>→</span></a></div></article>
+    <article class="destination-card" data-category="nature"><div class="destination-image"><img src="images/Kerala.jpg" alt="Kerala backwaters" loading="lazy"></div><div class="destination-info"><span>KERALA</span><h3>Kerala</h3><p>Peaceful backwaters, lush landscapes and a slower way to travel.</p><a href="place.html?place=kerala">Explore <span>→</span></a></div></article>
+    <article class="destination-card" data-category="mountains"><div class="destination-image"><img src="images/Manali.jpg" alt="Manali mountains" loading="lazy"></div><div class="destination-info"><span>HIMACHAL PRADESH</span><h3>Manali</h3><p>Mountain valleys, fresh air and unforgettable Himalayan adventures.</p><a href="place.html?place=manali">Explore <span>→</span></a></div></article>
+    <article class="destination-card" data-category="mountains"><div class="destination-image"><img src="images/Shimla.jpg" alt="Shimla hills" loading="lazy"></div><div class="destination-info"><span>HIMACHAL PRADESH</span><h3>Shimla</h3><p>Colonial charm, pine forests and beautiful Himalayan views.</p><a href="place.html?place=shimla">Explore <span>→</span></a></div></article>
+    <article class="destination-card" data-category="mountains"><div class="destination-image"><img src="images/Mussoorie.jpg" alt="Mussoorie mountains" loading="lazy"></div><div class="destination-info"><span>UTTARAKHAND</span><h3>Mussoorie</h3><p>A misty hill escape with scenic viewpoints and quiet forest trails.</p><a href="place.html?place=mussoorie">Explore <span>→</span></a></div></article>
+    <article class="destination-card" data-category="temples"><div class="destination-image"><img src="images/Mathura.jpg" alt="Mathura temple area" loading="lazy"></div><div class="destination-info"><span>UTTAR PRADESH</span><h3>Mathura</h3><p>Walk through the sacred land of Krishna and its timeless heritage.</p><a href="mathura.html">Explore <span>→</span></a></div></article>
+    <article class="destination-card" data-category="temples"><div class="destination-image"><img src="images/premanand-ji-maharaj.jpg" alt="Vrindavan spiritual destination" loading="lazy"></div><div class="destination-info"><span>UTTAR PRADESH</span><h3>Vrindavan</h3><p>Temple trails, sacred streets and a deeply devotional atmosphere.</p><a href="vrindavan.html">Explore <span>→</span></a></div></article>
+    <article class="destination-card" data-category="temples"><div class="destination-image"><img src="images/Varanasi.jpg" alt="Varanasi ghats" loading="lazy"></div><div class="destination-info"><span>UTTAR PRADESH</span><h3>Varanasi</h3><p>Ancient ghats, river rituals and one of India's oldest living cities.</p><a href="place.html?place=varanasi">Explore <span>→</span></a></div></article>
+  </div>
 </section>
 
+<section class="experiences" id="experiences">
+  <div class="section-heading light-heading"><span>CHOOSE YOUR MOOD</span><h2>Travel the way<br><em>you feel.</em></h2><p>Whether you want stillness, history or a little adrenaline, there is an India waiting for you.</p></div>
+  <div class="experience-grid">
+    <a class="experience-card experience-spiritual" href="temples.html"><span>01</span><div><small>SOULFUL</small><h3>Spiritual journeys</h3><p>Temples, ghats and places shaped by centuries of devotion.</p><strong>Explore →</strong></div></a>
+    <a class="experience-card experience-heritage" href="place.html?place=agra"><span>02</span><div><small>TIMELESS</small><h3>Heritage & culture</h3><p>Royal cities, historic monuments and stories carved in stone.</p><strong>Explore →</strong></div></a>
+    <a class="experience-card experience-mountains" href="place.html?place=manali"><span>03</span><div><small>WILD</small><h3>Mountains & nature</h3><p>Trade city noise for forests, valleys, rivers and fresh mountain air.</p><strong>Explore →</strong></div></a>
+  </div>
+</section>
 
-    <!-- Temporary section so navigation has a destination -->
-    <section class="intro" id="destinations">
-        <p>WANDERINDIA</p>
-        <h2>India is not just a destination.<br>It's a story waiting to be lived.</h2>
-    </section>
+<section class="featured">
+  <div class="featured-image"><img src="images/Ayodhya.jpg" alt="Ayodhya" loading="lazy"></div>
+  <div class="featured-copy"><span>FEATURED STORY</span><h2>Some places are<br><em>felt, not visited.</em></h2><p>Take the slower route through India's sacred heartland. Discover the places, people and traditions that give a journey its meaning.</p><a href="temples.html" class="text-link">Explore spiritual India <span>↗</span></a></div>
+</section>
 
+<section class="cta" id="contact">
+  <div><span>YOUR NEXT STORY</span><h2>Where will you<br><em>wander next?</em></h2></div>
+  <div><p>Have a destination in mind or a story to share? We'd love to hear from you.</p><a href="mailto:vmalik1712@gmail.com" class="primary-btn">Say hello <span>→</span></a></div>
+</section>
 </main>
 
-
-  <script src="js/script.js"></script>
+<footer class="footer">
+  <div class="footer-brand"><a href="index.html" class="logo">Wander<span>India</span></a><p>Discover India. Experience the journey.</p></div>
+  <div class="footer-links"><a href="#destinations">Destinations</a><a href="#experiences">Experiences</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+  <p class="footer-bottom">© 2026 WanderIndia. Built to make every journey memorable.</p>
+</footer>
+<script src="js/script.js"></script>
 </body>
 </html>
