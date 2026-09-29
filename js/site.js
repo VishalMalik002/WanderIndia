@@ -94,7 +94,16 @@
 
   // Universal inner-page hero imagery.
   if (localImages[path]) setHeroImage(localImages[path]);
-  if (placeKey && extraPlaces[placeKey]) renderExtraPlace(extraPlaces[placeKey]);
+  if (placeKey && extraPlaces[placeKey]) {
+    renderExtraPlace(extraPlaces[placeKey]);
+    const back=document.querySelector(".place-navigation a:first-child");
+    if(back){
+      const mathuraKeys=["krishna-janmabhoomi","dwarkadhish","vishram-ghat","govardhan"];
+      const vrindavanKeys=["banke-bihari","prem-mandir","iskcon","nidhivan"];
+      back.href = mathuraKeys.includes(placeKey) ? "mathura.html" : vrindavanKeys.includes(placeKey) ? "vrindavan.html" : placeKey==="ayodhya" ? "temples.html" : "index.html#destinations";
+      back.textContent = mathuraKeys.includes(placeKey) ? "← Back to Mathura" : vrindavanKeys.includes(placeKey) ? "← Back to Vrindavan" : placeKey==="ayodhya" ? "← Back to Temples" : "← Back to destinations";
+    }
+  }
 
   // Make every inner page navigation usable on smaller screens.
   const navbar=document.querySelector(".navbar");
