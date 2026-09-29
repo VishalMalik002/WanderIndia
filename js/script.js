@@ -126,7 +126,7 @@ const vrindavanPlaces = {
         aboutDescription:
             "The ISKCON temple in Vrindavan is a popular spiritual destination known for its devotional activities, chanting and international visitor community.",
 
-        image: "images/Prem-Mandir.jpg",
+        image: "images/ISKCON-Vrindavan.jpg",
 
         known: "Spiritual Centre",
         experience: "Kirtan & Devotion",
