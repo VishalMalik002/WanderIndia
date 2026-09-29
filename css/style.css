@@ -67,3 +67,16 @@ body{min-width:320px}
 @media(max-width:900px){.mathura-facts{grid-template-columns:repeat(2,1fr)}.mathura-facts .fact:nth-child(2){border-right:0}.mathura-facts .fact:nth-child(3){padding-left:0;border-top:1px solid var(--line);margin-top:20px}.mathura-facts .fact:nth-child(4){border-top:1px solid var(--line);margin-top:20px}.mathura-place-grid{grid-template-columns:1fr}.place-card>img{height:320px}}
 @media(max-width:600px){.mathura-hero{min-height:680px;padding:110px 22px 70px}.mathura-hero-content h1{font-size:52px}.mathura-intro,.mathura-places,.mathura-travel{padding:80px 20px}.mathura-facts{grid-template-columns:1fr}.mathura-facts .fact,.mathura-facts .fact:not(:first-child),.mathura-facts .fact:nth-child(3),.mathura-facts .fact:nth-child(4){padding:18px 0;border-right:0;border-top:1px solid var(--line);margin-top:0}.mathura-facts .fact:first-child{border-top:0}.place-card>img{height:270px}.spiritual-card>img{height:270px;flex-basis:270px}}
 @media(prefers-reduced-motion:reduce){.reveal,.place-card,.spiritual-card,.highlight-card,.travel-item{opacity:1;transform:none;transition:none}}
+
+/* ===== Mathura travel information repair ===== */
+.mathura-travel{background:#151515!important;color:#fff!important;padding:110px clamp(24px,8vw,120px)!important}
+.mathura-travel .section-heading{max-width:720px;margin-bottom:55px}
+.mathura-travel .section-heading>span{color:var(--gold)}
+.mathura-travel .section-heading h2{color:#fff}
+.mathura-travel .section-heading p{color:rgba(255,255,255,.72)}
+.mathura-travel .travel-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:18px!important;max-width:1100px}
+.mathura-travel .travel-item{display:flex;flex-direction:column;justify-content:flex-start;min-height:205px;padding:30px!important;background:#211f1b!important;border:1px solid rgba(255,255,255,.12)!important;border-radius:18px!important;box-shadow:0 14px 35px rgba(0,0,0,.18)!important}
+.mathura-travel .travel-item h3{color:#fff!important;font:600 21px var(--serif)!important;margin-bottom:13px!important}
+.mathura-travel .travel-item p{color:rgba(255,255,255,.72)!important;font-size:14px!important;line-height:1.8!important;margin:0!important;max-width:560px}
+.mathura-travel .travel-item:hover{transform:translateY(-5px);border-color:rgba(211,154,75,.5)!important}
+@media(max-width:600px){.mathura-travel{padding:80px 20px!important}.mathura-travel .travel-grid{grid-template-columns:1fr!important}.mathura-travel .travel-item{min-height:auto;padding:24px!important}}
