@@ -502,6 +502,11 @@ const vrindavanPlaces = {
         "Munnar, Alleppey, Kochi, Thekkady and Kovalam."
 },
 
+
+"manali":{title:"Manali",location:"MANALI • HIMACHAL PRADESH",description:"A Himalayan escape of snow-capped peaks, green valleys, rivers and unforgettable mountain adventures.",aboutTitle:"Where the mountains slow you down.",aboutDescription:"Manali is a popular Himalayan destination known for dramatic landscapes, outdoor activities and nearby mountain valleys.",image:"images/Manali.jpg",knownFor:"Himalayan Landscapes",experience:"Mountains & Adventure",bestTime:"October – June",highlights:[["🏔️ Mountain Views","Wake up to dramatic Himalayan scenery and peaceful valleys."],["🥾 Outdoor Adventure","Choose from trekking, river activities and seasonal experiences."],["🌲 Solang Valley","Explore a scenic valley known for mountain views and outdoor activities."],["☕ Old Manali","Discover cafés, local culture and a relaxed mountain-town atmosphere."]],reach:"Manali is primarily accessed by road from Chandigarh, Delhi and nearby Himachal towns.",time:"Choose the season based on whether you prefer snow or greener mountain landscapes.",tips:"Check road and weather conditions before travelling and carry layers for changing temperatures.",nearby:"Solang Valley, Old Manali, Rohtang region and Hidimba Devi Temple."},
+"shimla":{title:"Shimla",location:"SHIMLA • HIMACHAL PRADESH",description:"A charming hill destination blending pine forests, colonial-era architecture and sweeping Himalayan views.",aboutTitle:"A classic Himalayan escape.",aboutDescription:"Shimla is known for historic streets, mountain scenery, cool climate and colonial-era character.",image:"images/Shimla.jpg",knownFor:"Hill Station Heritage",experience:"Hills & Culture",bestTime:"March – June",highlights:[["🏔️ Himalayan Views","Enjoy panoramic mountain scenery from viewpoints around the city."],["🏛️ Colonial Heritage","Walk through historic streets and distinctive architecture."],["🌲 Pine Forests","Escape into quiet green landscapes surrounding Shimla."],["🚶 The Ridge","Experience the lively centre of Shimla's pedestrian area and views."]],reach:"Shimla is connected by road and rail, with nearby airport access through the region.",time:"March to June is popular for pleasant weather; winter brings colder conditions and possible snow.",tips:"Wear comfortable shoes for steep streets and check weather before travelling.",nearby:"Kufri, The Ridge, Mall Road and Jakhoo Temple."},
+"mussoorie":{title:"Mussoorie",location:"MUSSOORIE • UTTARAKHAND",description:"A peaceful Himalayan hill escape surrounded by misty landscapes, forests and scenic viewpoints.",aboutTitle:"The queen of the hills.",aboutDescription:"Mussoorie combines mountain scenery, forest walks, viewpoints and a lively hill-station atmosphere.",image:"images/Mussoorie.jpg",knownFor:"Himalayan Hill Station",experience:"Nature & Slow Travel",bestTime:"March – June",highlights:[["🌄 Scenic Viewpoints","Take in wide mountain views from the city's many overlooks."],["🌲 Forest Walks","Explore peaceful paths through the surrounding Himalayan forests."],["🚶 Mall Road","Enjoy the classic hill-station centre with shops and cafés."],["💧 Kempty Falls","Visit a popular waterfall destination near Mussoorie."]],reach:"Mussoorie is reached by road from Dehradun and other nearby cities.",time:"March to June is generally pleasant; monsoon brings lush scenery but wetter conditions.",tips:"Carry a light jacket and comfortable walking shoes; roads can be winding.",nearby:"Landour, Kempty Falls, Camel's Back Road and Lal Tibba."},
+"varanasi":{title:"Varanasi",location:"VARANASI • UTTAR PRADESH",description:"Experience ancient ghats, the Ganga and a living cultural landscape shaped by centuries of tradition.",aboutTitle:"A city where the river tells the story.",aboutDescription:"Varanasi is one of India's most historic cities, celebrated for its ghats, riverfront rituals, music, food and living traditions.",image:"images/Varanasi.jpg",knownFor:"Ghats & Ganga",experience:"Culture & Spirituality",bestTime:"October – March",highlights:[["🌊 Ganga Ghats","Walk along a riverfront lined with historic ghats and daily life."],["🪔 Evening Aarti","Witness a powerful evening ritual on the riverfront."],["🏛️ Old City","Explore narrow lanes filled with food, crafts and cultural landmarks."],["📸 Sunrise on the Ganga","Early mornings offer a memorable perspective on the river and city."]],reach:"Varanasi has an airport and major railway connections, with road links to surrounding cities.",time:"October to March generally offers more comfortable sightseeing weather.",tips:"Respect local customs, stay aware in crowded lanes and use authorised transport and guides.",nearby:"Sarnath, Dashashwamedh Ghat, Assi Ghat and the old city."},
 };
 
 
@@ -556,7 +561,7 @@ if (placeKey && vrindavanPlaces[placeKey]) {
     }
 
     if (factKnown) {
-        factKnown.textContent = place.knownFor;
+        factKnown.textContent = place.knownFor || place.known;
     }
 
     if (factExperience) {
@@ -637,3 +642,11 @@ if (placeKey && vrindavanPlaces[placeKey]) {
         travelNearby.textContent = place.nearby;
     }
 }
+
+// =========================
+// POLISHED NAVIGATION
+// =========================
+const menuToggle=document.getElementById("menu-toggle");
+const siteNav=document.getElementById("site-nav");
+if(menuToggle&&siteNav){menuToggle.addEventListener("click",()=>{const open=siteNav.classList.toggle("open");menuToggle.setAttribute("aria-expanded",String(open));menuToggle.textContent=open?"×":"☰"});siteNav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{siteNav.classList.remove("open");menuToggle.setAttribute("aria-expanded","false");menuToggle.textContent="☰"}));}
+const navbar=document.querySelector(".navbar");const syncNav=()=>navbar?.classList.toggle("scrolled",window.scrollY>24);syncNav();window.addEventListener("scroll",syncNav,{passive:true});
