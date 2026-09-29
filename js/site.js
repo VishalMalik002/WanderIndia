@@ -5,7 +5,7 @@
       description:"Explore one of Vrindavan's best-known temples and experience the devotional atmosphere of the Braj region.",
       aboutTitle:"A living centre of devotion.",
       aboutDescription:"Banke Bihari Temple is closely associated with Vrindavan's Krishna traditions and is known for its distinctive darshan, devotional culture and historic setting.",
-      image:"images/Dwarkadhish.jpg", known:"Historic Krishna Temple", experience:"Devotion & Culture", bestTime:"Oct – Mar",
+      image:"images/Mathura.jpg", known:"Historic Krishna Temple", experience:"Devotion & Culture", bestTime:"Oct – Mar",
       highlights:[["🛕","Temple Heritage","Discover the history and traditions associated with Shri Banke Bihari Mandir."],["🙏","Darshan","Experience the devotional rhythm of one of Vrindavan's best-known temples."],["🎵","Bhakti Culture","Bhajans, kirtan and devotional traditions shape the atmosphere around the temple."],["🚶","Vrindavan Streets","Explore the lanes and nearby temples that form the wider Braj pilgrimage experience."]],
       reach:"Vrindavan is easily reached by road from Mathura and nearby cities.", time:"October to March is generally comfortable for exploring Vrindavan.", tips:"Dress respectfully, follow temple instructions and keep valuables secure in crowded areas.", nearby:"Prem Mandir, ISKCON Vrindavan, Nidhivan and other Braj temples."
     },
@@ -23,7 +23,7 @@
       description:"Visit ISKCON Vrindavan for devotional music, temple architecture and a peaceful spiritual environment.",
       aboutTitle:"A global spiritual home in Vrindavan.",
       aboutDescription:"The Krishna Balaram Mandir is a prominent Vrindavan temple known for devotional activities, architecture and its connection with the international ISKCON community.",
-      image:"images/Krishna-Janmabhoomi.jpg", known:"Krishna Balaram Mandir", experience:"Devotion & Community", bestTime:"Oct – Mar",
+      image:"images/ISKCON-Vrindavan.jpg", known:"Krishna Balaram Mandir", experience:"Devotion & Community", bestTime:"Oct – Mar",
       highlights:[["🎵","Kirtan & Bhajans","Experience devotional music and chanting that are central to the temple atmosphere."],["🛕","Temple Architecture","Explore the ornate temple complex and its distinctive details."],["🌍","Global Community","See a spiritual centre that welcomes visitors from around the world."],["🌿","Peaceful Setting","Take a slower moment away from the busiest streets of Vrindavan."]],
       reach:"ISKCON Vrindavan is accessible by road from Mathura and other nearby towns.", time:"October to March is generally comfortable for sightseeing.", tips:"Follow temple instructions and be considerate during worship and photography.", nearby:"Prem Mandir, Banke Bihari Temple and Nidhivan."
     },
