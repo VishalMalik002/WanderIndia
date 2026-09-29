@@ -52,7 +52,7 @@ const vrindavanPlaces = {
         aboutDescription:
             "Banke Bihari Temple is one of the most important pilgrimage destinations in Vrindavan and is closely associated with the worship of Lord Krishna.",
 
-        image: "images/Banke-Bihari.jpg",
+        image: "images/Mathura.jpg",
 
         known: "Krishna Temple",
         experience: "Devotion & Culture",
@@ -126,7 +126,7 @@ const vrindavanPlaces = {
         aboutDescription:
             "The ISKCON temple in Vrindavan is a popular spiritual destination known for its devotional activities, chanting and international visitor community.",
 
-        image: "images/ISKCON-Vrindavan.jpg",
+        image: "images/Prem-Mandir.jpg",
 
         known: "Spiritual Centre",
         experience: "Kirtan & Devotion",
@@ -402,7 +402,7 @@ const vrindavanPlaces = {
      knownFor: "Royal Heritage",
     experience: "Culture & Architecture",
     bestTime: "October to March",
-    image: "https://images.unsplash.com/photo-1524229321985-1e1989075d9b?auto=format&fit=crop&w=1600&q=82",
+    image: "images/Hawa-Mahal.jpg",
 
     highlights: [
         ["🏰", "Royal Heritage", "Discover magnificent forts, palaces and the rich history of Jaipur."],
@@ -441,7 +441,7 @@ const vrindavanPlaces = {
     knownFor: "Taj Mahal & Mughal Heritage",
     experience: "History & Architecture",
     bestTime: "October to March",
-    image: "https://images.unsplash.com/photo-1532886221698-4bf090e59e72?auto=format&fit=crop&w=1600&q=82",
+    image: "images/Taj-Mahal.jpg",
 
     highlights: [
         ["🕌", "Taj Mahal", "Marvel at the world-famous monument of love and its stunning architecture."],
@@ -481,7 +481,7 @@ const vrindavanPlaces = {
     experience: "Peaceful Backwaters",
 
     bestTime: "October to March",
-    image: "https://images.unsplash.com/photo-1593417034675-3ed7eda1bee9?auto=format&fit=crop&w=1600&q=82",
+    image: "images/Kerala.jpg",
 
     highlights: [
         ["🌴", "Backwaters", "Experience Kerala's peaceful waterways surrounded by lush green landscapes."],
